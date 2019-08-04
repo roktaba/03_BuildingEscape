@@ -2,6 +2,7 @@
 
 
 #include "PossitionReport.h"
+#include "GameFramework/Actor.h"
 
 // Sets default values for this component's properties
 UPossitionReport::UPossitionReport()
@@ -18,7 +19,7 @@ UPossitionReport::UPossitionReport()
 void UPossitionReport::BeginPlay()
 {
 	Super::BeginPlay();
-
+	GetOwner();
 	UE_LOG(LogTemp, Warning, TEXT("Position report reporting for duty on Chair!"));
 	
 }
